@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Weather.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="weather-card">
+        <div id="loader">
+            <div class="spinner"></div>
+        </div>
+
+        <div id="content">
+            <div class="search-container">
+                <i class="bi bi-search"></i>
+                <input type="text" id="cityInput" placeholder="Search city..." autocomplete="off">
+            </div>
+
+            <div class="location">
+                <h1 id="cityTitle">---</h1>
+                <p id="descTitle"
+                    style="color: var(--accent); letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem;">
+                    Waiting...</p>
+            </div>
+
+            <div class="main-temp">
+                <span id="tempVal">0</span><span class="unit">°</span>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="bi bi-droplet"></i>
+                    <div class="info-text"><span>Humidity</span>
+                        <p id="humVal">0%</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-wind"></i>
+                    <div class="info-text"><span>Wind</span>
+                        <p id="windVal">0 km/h</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-thermometer-half"></i>
+                    <div class="info-text"><span>Feels Like</span>
+                        <p id="feelVal">0°</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="bi bi-eye"></i>
+                    <div class="info-text"><span>Visibility</span>
+                        <p id="visVal">0 km</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Weather.js"></script>
+</body>
+
+</html>
